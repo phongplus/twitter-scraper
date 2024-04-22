@@ -1,11 +1,14 @@
 {
-	"name": "@jimmyphong/twitter-scraper-edge",
+	"name": "@phongplus/twitter-scraper-edge",
 	"description": "A port of n0madic/twitter-scraper to Node.js.",
 	"keywords": ["x", "twitter", "scraper", "crawler"],
 	"version": "0.11.0",
 	"main": "dist/_module.js",
-	"repository": "https://github.com/phongplus/twitter-scraper-edge.git",
-	"author": "jimmyphong",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/phongplus/twitter-scraper-edge.git"
+	},
+	"author": "phongplus",
 	"license": "MIT",
 	"engines": {
 		"node": ">=16"
@@ -62,5 +65,10 @@
 	},
 	"lint-staged": {
 		"*.{js,ts}": ["eslint --cache --fix", "prettier --write"]
-	}
+	},
+	"types": "./dist/_module.d.ts",
+	"bugs": {
+		"url": "https://github.com/phongplus/twitter-scraper-edge/issues"
+	},
+	"homepage": "https://github.com/phongplus/twitter-scraper-edge#readme"
 }
